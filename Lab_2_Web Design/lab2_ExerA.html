@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PROGRAMMING WORKSHOP</title>
+</head>
+<body>
+    <header>PROGRAMMING DRILL</header>
+    <P>Learn it.Build it.Ship it. One-day of hands-on web development</P>
+
+    <nav>
+        <a href="#about">About</a>
+        <a href="#schedule">Schedule</a>
+        <a href="Register">Register</a>
+
+        <section id="about">
+            <h2>About this Event</h2>
+            <p>This programming workshop is a one-day event, held by Faculty of Computer Science and Mathemati on Saturday, 31 October 2026. This event is open for all student</p>
+
+            <article>
+                <h3>Speaker : Dr Ts Muhammad Fauzan bin Azhar<h3>
+                    <p>
+                        Dr Ts Fauzan is a senior lecturer of a web lecturer and was the one of alumni of Universiti Malaysia Terengganu. He will show a step by step how to use HTMl and CSS
+                    </p>
+            </article>
+
+            <article>
+                <h3>Activity : Hackhaton Explorace</h3>
+                <p>Work on a small team do solve a puzzle on every station to become a the best team.</p>
+            </article>
+        </section>
+
+
+        <section id="schedule">
+            <h2>Event Schedule</h2>
+            <table border="1">
+                <caption>Programme for Saturday, 31 October 2026</caption>
+                <thead>
+                    <tr>
+                        <th>Time</th>
+                        <th>Activity</th>
+                        <th>Venue</th>
+                        <th>Person</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!--Registration-->
+                    <tr>
+                        <td>10.00 AM</td>
+                        <td>Registration and Welcome</td>
+                        <td>FSKM Main Lobby</td>
+                        <td>Registration Team</td>
+                    </tr>
+                    <!---Opening Ceremony-->
+                    <tr>
+                        <td>10.30 AM</td>
+                        <td>Opening Ceremony</td>
+                        <td>Dewan Syed Jalaludin</td>
+                        <td>Dean of Faculty</td>
+                    </tr>
+
+                    <!--Session 1-->
+                    <tr>
+                        <td>11.00 AM</td>
+                        <td>Workshop Session 1 : HTML Basic Skills</td>
+                        <td rowspan="2">Computer Lab 1</td>
+                        <td>Dr Ts Muhammad Fauzan</td>
+                    </tr>
+
+                    <!--Session 2-->
+                    <tr>
+                        <td>12.00 AM</td>
+                        <td>Workshop Sessionn 2 : Tables and Forms</td>
+                        <td>Dr Nabil Taha</td>
+                    </tr>
+
+                    <!--Lunch-->
+                    <tr>
+                        <td>01.00 PM</td>
+                        <td colspan="3">Lunch Break</td>
+                    </tr>
+
+                    <!--Session 3-->
+                    <tr>
+                        <td>02.00 PM</td>
+                        <td>Workshop Session 3 : Knowing Website and HTML
+                        <td rowspan="2">BYOD 1</td>
+                        <td>Ms. Nurul Huda</td>
+                    </tr>
+
+                    <!--Session 4-->
+                    <tr>
+                        <td>03.00 PM</td>
+                        <td>Workshop Session 4 : Building Website</td>
+                        <td>Dr Nur Balqis</td>
+                    </tr>
+
+                    <!--Session 5-->
+                    <tr>
+                        <td>04.00 PM</td>
+                        <td>Team Presentation</td>
+                        <td>Computer Lab 1</td>
+                        <td>Lecturers</td>
+                    </tr>
+
+                    <!--Closing Ceremony-->
+                    <tr>
+                        <td>05.00 PM</td>
+                        <td>Prize Giving and Closing Ceremony</td>
+                        <td>FSKM GRAND HALL</td>
+                        <td>VVIP</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section id="register">
+            <h2>Registration</h2>
+
+            <!--Registration with form-->
+            <form action="register.html" method="post"></form>
+
+            <!--Text input-->
+            <p>
+                <label for="fullname">Full Name : </label>
+                <input type="text" id="fullname" name="fullname" required>
+            </p>
+
+            <p>
+                <label for="matric">Matric Number</label>
+                <input type="text" id="matric" name="matric"required>
+            </p>
+
+            <p>
+                <label for="email">Email</label>
+                <input type="text" id="email" name="email" required>
+            </p>
+
+            <fieldset>
+                <legend>Year of Study</legend>
+                <input type="radio" id="year1" name="year" value="1" required>
+                <label for="year1">Year 1</label>
+                <input type="radio" id="year2" name="year" value="2" required>
+                <label for="year1">Year 2</label>
+                <input type="radio" id="year3" name="year" value="3" required>
+                <label for="year1">Year 3</label>
+                <input type="radio" id="year4" name="year" value="4" required>
+                <label for="year1">Year 4</label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Session You Want to Join</legend>
+                <input type="checkbox" id="s1" name="session" value="html-basics">
+                <label for="s1">Workshop Session 1 : HTML Basic Skill</label><br>
+                <input type="checkbox" id="s2" name="session" value="table-form">
+                <label for="s2">Workshop Session 2 : Tables and Form</label><br>
+                <input type="checkbox" id="s3" name="session" value="website">
+                <label for="s3">Workshop Session 3 : Knowing Website and HTML</label><br>
+                <input type="checkbox" id="s4" name="session" value="hackaton">
+                <label for="s1">Workshop Session 4 : Hackhaton</label><br>
+            </fieldset>
+
+            <p>
+                <label for="programme">Programme : </label>
+                <select id="programme" name="programme"required>
+                    <option value="">Select Programme</option>
+                    <option value="kp">Software Engineering</option>
+                    <option value="im">Informatic Maritim</option>
+                    <option value="kma">Mobile Computing</option>
+                    <option value="da">Data Analytic</option>
+                </select>
+            </p>
+
+            <!--Submit button-->
+            <p>
+                <input type="submit" value="Register Now">
+            </p>
+        </form>
+        </section>
+    </nav>
+</body>
+</html>
