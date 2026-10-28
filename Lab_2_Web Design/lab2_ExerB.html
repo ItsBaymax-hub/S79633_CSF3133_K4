@@ -3,6 +3,12 @@
 <head>
   <meta charset="utf-8">
   <title>Course Feedback</title>
+  <style>
+    table, th,td{
+        border: 1px solid black;
+        border-collapse: collapse;
+    }
+  </style>
 </head>
 <body>
 
@@ -15,7 +21,7 @@
     Error 6 (Line 40): label for="name" does not match the input id="fullname"
     Error 7 (Line 41): the "Overall rating" label is not linked to any input, replaced with fieldset and legend
     Error 8 (Lines 42 and 44): radio buttons have different names (good, poor), so both can be selected. They must share one name
-    Error 9 (Line 47): label for="labs" does not match the checkbox id="lab"
+    Error 9 (Line 47): latukabel for="labs" does not match the checkbox id="lab"
     Error 10 (Line 49): form was closed with </from> instead of </form>
     Error 11 (Line 52): &copy is missing the semicolon, it should be &copy;
   -->
@@ -36,7 +42,7 @@
   <section id="results">
     <h2>Feedback Summary</h2>
 
-    <table border="1">
+    <table>
       <!-- Header row -->
       <tr>
         <th>Week</th>
