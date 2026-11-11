@@ -1,0 +1,105 @@
+/* ===== General page style (light blue theme) ===== */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #eaf6fd;   /* very light blue page background */
+    color: #1c2b36;
+}
+
+/* ===== Header and heading decorations ===== */
+header {
+    background-color: #8ecae6;   /* main light blue */
+    padding: 20px;
+    text-align: center;
+}
+h1 {
+    color: #0b3954;
+    text-decoration: overline;   /* line above the heading */
+}
+h2 {
+    color: #1f6fa8;
+    text-decoration: underline;  /* line below the heading */
+}
+
+/* ===== Navigation bar ===== */
+nav ul {
+    list-style-type: none;       /* remove bullets */
+    margin: 0;
+    padding: 0;
+    background-color: #a9d6f5;
+    text-align: center;
+}
+nav li {
+    display: inline-block;
+}
+nav a {
+    display: block;
+    padding: 14px 20px;
+    text-decoration: none;       /* remove underline */
+    text-transform: uppercase;
+}
+
+/* ===== Link states (order: link, visited, hover, active) ===== */
+a:link    { color: #1565c0; }
+a:visited { color: #6a1b9a; }
+a:hover   { color: #00838f; }
+a:active  { color: #c62828; }
+
+/* Navigation links: dark text, background changes on hover */
+nav a:link, nav a:visited { color: #0b3954; }
+nav a:hover  { background-color: #2a7ab8; color: #ffffff; }
+nav a:active { background-color: #1f5f8f; color: #ffffff; }
+
+/* ===== Sections (ID selectors) ===== */
+#destinations, #video, #trip {
+    width: 90%;                  /* percentage width for small screens */
+    margin: 20px auto;
+}
+#destinations { background-color: #ffffff; padding: 15px; }
+#video { text-align: center; }
+
+/* ===== Destination cards and prices (class selectors) ===== */
+.card {
+    border: 1px solid #8ecae6;
+    padding: 10px;
+    margin-bottom: 15px;
+    background-color: #f5fbff;
+}
+.price { font-size: 18px; }
+.old-price {
+    text-decoration: line-through;   /* crossed-out old price */
+    color: #6b7c8a;
+}
+.new-price {
+    color: #d35400;
+    font-weight: bold;
+}
+
+/* ===== Video (responsive) ===== */
+video {
+    max-width: 100%;
+    height: auto;
+}
+.caption {
+    font-style: italic;
+    color: #3d5a6c;
+}
+
+/* ===== Trip form ===== */
+.trip-form {
+    background-color: #d6ecfa;
+    padding: 15px;
+    border: 2px solid #4a9fd4;
+    width: 90%;
+    max-width: 500px;
+}
+
+/* ===== Footer ===== */
+footer {
+    background-color: #8ecae6;
+    color: #0b3954;
+    text-align: center;
+    padding: 15px;
+}
+footer a:link, footer a:visited { color: #0b3954; }
+footer a:hover { color: #b3541e; }

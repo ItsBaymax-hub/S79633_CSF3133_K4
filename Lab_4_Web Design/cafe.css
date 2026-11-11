@@ -1,0 +1,81 @@
+/* ===== Page layout ===== */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #fffaf3;
+}
+header {
+    background-color: #FDEBD0;
+    padding: 20px;
+    text-align: center;
+}
+section {
+    width: 90%;
+    margin: 20px auto;
+}
+
+/* ===== Navigation bar ===== */
+nav ul {
+    list-style-type: none;       /* remove bullets */
+    margin: 0;
+    padding: 0;
+    background-color: #1A5276;
+    text-align: center;
+}
+nav li {
+    display: inline-block;
+}
+nav a {
+    display: block;              /* whole area is clickable */
+    padding: 14px 20px;
+    text-transform: uppercase;
+    text-decoration: none;       /* remove underline */
+}
+nav a:link, nav a:visited { color: #ffffff; }
+nav a:hover  { background-color: #E67E22; color: #ffffff; }  /* hover colour */
+nav a:active { background-color: #C0392B; color: #ffffff; }
+
+/* ===== Menu items and promotion prices ===== */
+.item {
+    border: 1px solid #E67E22;
+    padding: 10px;
+    margin-bottom: 15px;
+    background-color: #ffffff;
+}
+.old-price {
+    text-decoration: line-through;   /* crossed-out old price */
+    color: #7f8c8d;
+}
+
+/* ===== Video (responsive) ===== */
+figure {
+    margin: 0;
+    text-align: center;
+}
+video {
+    max-width: 100%;
+    height: auto;
+}
+figcaption {
+    font-style: italic;
+    color: #555555;
+}
+
+/* ===== Feedback form ===== */
+.feedback-form {
+    background-color: #FDEBD0;
+    padding: 15px;
+    border: 2px solid #E67E22;
+    width: 90%;
+    max-width: 500px;
+}
+
+/* ===== Footer ===== */
+footer {
+    background-color: #FDEBD0;
+    padding: 15px;
+    text-align: center;
+}
+footer address {
+    font-style: normal;
+}

@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VISIT TERENGGANU</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .seats {
+            text-align: center;
+            font-size: 24px;
+            font-weight: bold;
+            color: #333;
+        }
+        footer address {
+            font-style: normal;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>WELCOME TO TERENGGANU</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#destinations">Destinations</a></li>
+            <li><a href="#video">Video</a></li>
+            <li><a href="#view">View</a></li>
+            <li><a href="#islandtrip">Island Trip Form</a></li>
+        </ul>
+    </nav>
+
+    <!--Section Explanation for Destinantion-->
+    <section id = "destination">
+        <h2>Top Destinations in Terengganu</h2>
+
+        <article class="card">
+            <h3>Redang Island</h3>
+            <p>
+                Tucked away in the South China Sea off the coast of Terengganu, Pulau Redang is a tropical island paradise where crystal-clear water, soft white beaches, and thriving coral reefs await. Snorkel alongside colourful fish, gentle green turtles, and blacktip reef sharks in the sheltered bays of Redang Marine Park, then unwind on the golden sands of Pasir Panjang or explore the island’s quiet fishing villages. Just a short ferry ride from Kuala Terengganu or Merang, Redang is one of Southeast Asia’s most beautiful and unspoiled island getaways, best visited between March and October when the sea is calm and visibility is at its best.
+            </p>
+            <p class="price"><span class="old_price">RM250 per person</span><br><span class="new_price">RM150 per person</span></p>
+        </article>
+
+        <article class="card">
+            <h3>Perhentian Island</h3>
+            <p>
+                The Perhentian Islands are a small group of islands off the coast of northeastern Malaysia. They are known for their crystal-clear waters, white sandy beaches, and vibrant marine life. The islands are a popular destination for snorkeling, diving, and relaxing on the beach. Visitors can explore the coral reefs, swim with turtles, and enjoy the laid-back atmosphere of the islands. The Perhentians are accessible by boat from the mainland and offer a range of accommodations, from budget-friendly hostels to luxury resorts.
+            </p>
+            <p class="price"><span class="old_price">RM300 per person</span><br><span class="new_price">RM200 per person</span></p>
+
+            <article class="card">
+                <h3>Terengganu Heritage Tour</h3>
+                <p>
+                    Discover the rich cultural heritage of Terengganu on this immersive tour. Visit historical sites, traditional markets, and local villages to experience the unique customs and traditions of the region. Learn about the history of the sultanate, explore ancient temples, and interact with local artisans who showcase their traditional crafts.
+                </p>
+                <p class="price"><span class="old_price">RM150 per person</span><br><span class="new_price">RM100 per person</span></p>
+            </article>
+        </article>
+    </section>
+
+    <!--Section Explanation for Video-->
+    <section id="video">
+        <h2>Promotional Video</h2>
+        <figure>
+            <video width="640" height="360" controls>
+                <source src="terengganu.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <figcaption class="caption">DISCOVER THE BEAUTY OF TERENGGANU</figcaption>
+        </figure>
+    </section>
+
+    <!--Section Explanation for View-->
+    <section id="view">
+        <h2>View of Terengganu</h2>
+        <figure>
+    <img src="visitterengganu.jpg" alt="View of Terengganu" width="640" height="360">
+    <figcaption class="caption">A breathtaking view of Terengganu's coastline.</figcaption>
+</figure>
+<figure>
+    <img src="pulauredang.jpg" alt="Pulau Redang" width="640" height="360">
+    <figcaption class="caption">The pristine beaches of Pulau Redang.</figcaption>
+</figure>
+    </section>
+
+    <!--Section Explanation for Island Trip-->
+    <section id="islandtrip">
+        <h2>Island Trip Form</h2>
+       <form class="trip-form" action="#" method="post">
+        <p>
+            <label for="name">Name :</label>
+            <input type="text" id="name" name="name" required>
+        </p>
+        <p>
+            <label for="email">Email :</label>
+            <input type="email" id="email" name="email" required>
+        </p>
+        <!--Radio Type for Travel Type -->
+        <p>
+            <label>Travel Type :</label>
+
+            <input type="radio" id="student" name="traveller" value="student" required>
+            <label for ="student">Student</label>
+
+            <input type="radio" id = "staff" name = "traveller" value = "staff" required>
+            <label for="staff">Staff</label>
+
+            <input type="radio" id ="public" name = "traveller" value = "public" required>
+            <label for="public">Public</label>
+
+            <input type="radio" id ="tourist" name = "traveller" value = "tourist" required>
+            <label for="tourist">Tourist</label>
+        </p>
+
+        <!--Checkbox for Activities -->
+        <p>Interests : <br>
+        <input type="checkbox" id="island" name="interest" value="island">
+        <label for="island">Island</label>
+
+        <input type="checkbox" id="food" name="interest" value="food">
+        <label for="food">Food</label>
+
+        <input type="checkbox" id="heritage" name="interest" value="heritage">
+        <label for="heritage">Heritage</label>
+
+        <input type="checkbox" id="nature" name="interest" value="nature">
+        <label for="nature">Nature</label>
+        </p>
+
+        <input type="submit" value="Submit">
+       </form>
+    </section>
+
+    <!--Footer Section-->
+    <footer>
+        <p>&copy; 2023 Terengganu Tourism. All rights reserved.</p>
+        <address>
+            <a href="mailto:info@visitterengganu.my">info@visitterengganu.my</a>
+        </address>
+    </footer>
+
+</body>
+</html>
+
