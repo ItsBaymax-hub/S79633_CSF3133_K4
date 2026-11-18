@@ -1,0 +1,134 @@
+/*Whole page (body)*/
+body{
+    margin: 0;
+    font-family: 'Open Sans', Arial, sans-serif;
+    background-color: #FBF7F0;
+    color: #2c2c2c;
+}
+
+h1,h2 {
+    font-family: 'Poppins', Arial, sans-serif;
+}
+
+/*Header with background image*/
+header{
+    background-image: url("header-bg.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
+    text-align: center;
+    padding: 80px 20px 100px;
+}
+
+header h1{
+    margin: 0 0 10px;
+    font-size: 2.6rem;
+    text-shadow: 2px 2px 6px rgba(0, 0, 0.5);
+}
+
+header p{
+    margin: 0;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0.7);
+}
+
+/*Horizontal navigation bar*/
+nav ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+nav li{
+    float: left;
+}
+
+nav li a{
+    display: block;
+    padding: 14px 20px;
+    color: white;
+    text-decoration: #333;
+}
+
+nav li a:hover{
+    background-color: #111;
+}
+
+nav li a.active{
+    background-color: #E67E22;
+}
+
+/*Content width and text*/
+main{
+    width: 90%;
+    max-width: 980px;
+    margin: 0;
+    padding: 20px 0;
+}
+
+main p{
+    text-align: justify;
+    line-height: 1.6;
+}
+
+/*Styled table*/
+#stall-table{
+    border-collapse: collapse;
+    width: 100%;
+}
+
+#stall-table th, stall-table td{
+    border: 1px solid #ddd;
+    padding: 10px 12px;
+    text-align: right;
+}
+
+#stall-table th{
+    background-color: #E67E22;
+    color: white;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+#stall-table tbody tr:nth-child(even){
+    background-color: #F2F2F2;
+}
+
+#stall-tablet tbody tr:hover{
+    background-color: #fdebd0;
+}
+
+#stall-table td.price{
+    text-align:  right;
+}
+
+/*Footer*/
+footer{
+    background-color: #efe6d8;
+    text-align: center;
+    padding: 12px 20px;
+    margin-top: 20px;
+    font-size: 0.85rem;
+}
+
+footer p{
+    margin: 0;
+}
+
+/*Responsive : Smaller screens*/
+@media (max-width : 600px){
+    header h1{
+        font-size: 1.8rem;
+    }
+
+    nav li a{
+        padding: 12px 14px;
+    }
+
+    #stall-table th, #stall-table{
+        padding: 8px 6px;
+        font-size: 0.9rem;
+    }
+}

@@ -1,0 +1,115 @@
+/* ---------- Page: font, background image and width ---------- */
+body {
+  /* Error 5 : font name 'Robotto' was misspelled. Changed to 'Roboto'. */
+  font-family: 'Roboto', sans-serif;      
+  background-image: url("paper.gif");     
+  /* Error 6 : "no repeat" was missing a "-". Changed to no-repeat. */
+  background-repeat: no-repeat;           
+  /* Error 7 : property "bacground-position" was misspelled. Changed to background-position. */
+  background-position: right top;         
+  max-width: 900px;                       
+  margin: 0 auto;                         
+}
+
+
+h1, h2 {
+  font-family: 'Merriweather', serif;     
+}
+
+p {
+  line-height: 1.6;                       
+}
+
+
+header {
+  background-image: url("books.jpg");
+  background-size: cover;                 
+  background-position: center;
+  background-repeat: no-repeat;
+  color: white;                           
+  padding: 50px 20px;
+}
+
+header h1 {
+  margin: 0;
+  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.5);   
+}
+
+/* ---------- Navigation bar ---------- */
+ul {
+  list-style-type: none;                  
+  margin: 0;
+  padding: 0;
+  overflow: hidden;                       
+  background-color: #333;                 
+}
+
+li {
+  float: left;                            
+}
+
+li a {
+  /* Error 8 : display: inline made the menu links wrong. Changed to display: block. */
+  display: block;                         
+  color: white;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Error 9 : selector "li:a:hover" is invalid. Changed to "li a:hover". */
+li a:hover:not(.active) {
+  background-color: #111;                 
+}
+
+li a.active {
+  background-color: #04AA6D;              
+}
+
+/* ---------- Main content ---------- */
+main {
+  padding: 0 16px;
+}
+
+/* ---------- Table ---------- */
+#products {
+  /* Error 10 : "collapsed" is not a valid value. Changed to collapse. */
+  border-collapse: collapse;             
+  width: 100%;
+}
+
+#products td, #products th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+#products th {
+  background-color: #04AA6D;
+  color: white;
+  text-transform: uppercase;              
+  text-align: center;                     
+  padding-top: 12px;
+  padding-bottom: 12px;
+}
+
+/* Error 11 : tr:nth-child(2) coloured only one row. Changed to tr:nth-child(even). */
+#products tr:nth-child(even) {
+  background-color: #f2f2f2;              
+}
+
+/* Error 12 : "tr:hovered" is not a valid pseudo-class. Changed to tr:hover. */
+#products tr:hover {
+  background-color: #ddd;                 
+}
+
+#products td.price {
+  text-align: right;                      
+}
+
+/* ---------- Footer ---------- */
+footer {
+  /* Error 13 : the semicolon after #f1f1f1 was missing, which broke text-align below it. Added the semicolon. */
+  background-color: #f1f1f1;              
+  text-align: center;
+  padding: 10px;
+  margin-top: 20px;
+}
