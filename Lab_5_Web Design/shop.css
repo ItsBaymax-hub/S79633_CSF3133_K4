@@ -6,8 +6,7 @@ body {
   /* Error 6 : "no repeat" was missing a "-". Changed to no-repeat. */
   background-repeat: no-repeat;           
   /* Error 7 : property "bacground-position" was misspelled. Changed to background-position. */
-  background-position: right top;         
-  max-width: 900px;                       
+  background-position: right top;                                
   margin: 0 auto;                         
 }
 
