@@ -131,6 +131,7 @@ function resetGame(){
         document.getElementById("wins").textContent = 0;
         document.getElementById ("losses").textContent = 0;
         document.getElementById("draw").textContent = 0;
+        document.getElementById("playerName").value = "";
         
 
         results.length = 0;
