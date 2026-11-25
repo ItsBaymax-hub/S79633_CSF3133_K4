@@ -1,0 +1,114 @@
+/* style.css — Rock, Paper, Scissors game (Lab 6 Problem A)
+   Design: pusatkan halaman (centered) + tema warna purple */
+
+:root {
+    --purple-dark: #4c1d95;    /* purple gelap (title/heading) */
+    --purple-main: #7b2cbf;    /* purple utama (buttons/header) */
+    --purple-light: #a855f7;   /* purple cerah (hover/akcent) */
+    --purple-pale: #f3e8ff;    /* purple pudar (bg section/table) */
+    --white: #ffffff;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    max-width: 800px;
+    margin: 20px auto;        /* pusatkan page secara horizontal */
+    padding: 0 20px;
+    text-align: center;       /* pusatkan seluruh konten di dalam page */
+    background-color: #fbf7ff;
+    color: #2e2b5e;
+}
+
+/*Judul centering + purple*/
+header h1 { color: var(--purple-dark); }
+header p { color: var(--purple-dark); }
+
+header, section, footer {
+    margin-bottom: 20px;
+}
+
+/* Buttons: purple gradient + centered */
+button {
+    padding: 10px 18px;
+    margin: 5px;
+    font-size: 16px;
+    border: none;
+    border-radius: 6px;
+    background: linear-gradient(135deg, var(--purple-main), var(--purple-light));
+    color: var(--white);
+    cursor: pointer;
+    transition: background 0.2s, transform 0.1s;
+}
+
+button:hover {
+    background: linear-gradient(135deg, var(--purple-dark), var(--purple-main));
+    transform: translateY(-2px);
+}
+
+/* Nama input: light purple border */
+input[type="text"] {
+    padding: 8px;
+    border: 2px solid var(--purple-main);
+    border-radius: 6px;
+    font-size: 16px;
+}
+
+/* Images: side by side (player & computer), centered overall */
+#images {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;                /* jarak antar gambar */
+    margin: 15px 0;
+}
+
+#images img {
+    width: 120px;
+    height: 120px;
+    object-fit: contain;
+    border: 2px solid var(--purple-light);
+    border-radius: 8px;
+    background: var(--white);
+}
+
+/* History table: centered */
+#history {
+    border-collapse: collapse;
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;           /* pusatkan table */
+    background: var(--white);
+}
+
+#history th, #history td {
+    border: 1px solid #e4dcff;
+    padding: 8px 12px;
+    text-align: center;
+}
+
+/* Header table: purple */
+#history thead th {
+    background-color: var(--purple-main);
+    color: var(--white);
+}
+
+/* Result message */
+#result {
+    font-size: 20px;
+    font-weight: bold;
+    min-height: 28px;
+    color: var(--purple-dark);
+}
+
+/* Scoreboard centered */
+section#resultSection {
+    text-align: center;
+}
+span { font-weight: bold; }
+
+/* Footer: purple border */
+footer {
+    border-top: 1px solid #d6c8fb;
+    padding-top: 10px;
+    color: var(--purple-dark);
+}

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock, Paper, Scissors - Lab 6 </title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!--Header : Game title and a short instruction-->
+    <header>
+        <h1>Rock, Paper, Scissor Game</h1>
+        <p>Enter your name, click Start Game, then play by using Rock, Paper, Scissor.</p>
+    </header>
+
+
+    <!--Player Section : Name text input and Start Game button-->
+    <section id="playerSection">
+        <h2>Player</h2>
+        <label for="playerName">Your Name : </label>
+        <input type="text" id="playerName" placeholder="Enter your name to start play" required>
+        <button onclick="startGame()">Start Game</button>
+    </section>
+
+    <section id="gameSection">
+        <h2>Play a Round</h2>
+        <button onclick="playRound('rock')">Rock</button>
+        <button onclick="playRound('paper')">Paper</button>
+        <button onclick="playRound('scissors')">Scissors</button>
+        <div id="images">
+            <!--Player image section-->
+            <img id="playerImage" src="rock.png" alt="Player choice image">
+            <!--Computer image section-->
+            <img id="computerImage" src="rock.png" alt="Computer choice image">
+        </div>
+    </section>
+
+    <!--Result Section-->
+    <section id="resultSection">
+        <h2>Result</h2>
+        <p id="result"></p>
+        <p>Scoreboard : Wins : <span id="wins">0</span> &nbsp; Losses: <span id="losses">0</span> &nbsp; Draw : <span id="draw">0</span></p>
+    </section>
+
+    <section id="historySection">
+        <h2>Round History</h2>
+        <table id="history">
+            <thead>
+                <tr>
+                    <th>Round</th>
+                    <th>You</th>
+                    <th>Computer</th>
+                    <th>Result</th>
+                </tr>
+            </thead>
+            <tbody id="historyBody"></tbody>
+        </table>
+    </section>
+
+    <!--Control section : Show Summary and Reset buttons-->
+    <section id="controls">
+        <h2>Control</h2>
+        <button onclick="showSummary()">Show Summary</button>
+        <button onclick="resetGame()">Reset</button>
+    </section>
+
+    <!--Footer-->
+    <footer>
+        <p id="startTime"></p>
+        &copy; Lab 6 Problem A : Web Design Lab
+    </footer>
+
+    <script src="game.js"></script>
+</body>
+</html>
